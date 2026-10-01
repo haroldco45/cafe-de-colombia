@@ -1,0 +1,16 @@
+{
+  "name": "Café de Colombia · Homenaje",
+  "short_name": "Café de Colombia",
+  "description": "Homenaje al café de Colombia y a sus caficultores: proceso, variedades, regiones, menú, cafeterías, videos y fotos.",
+  "lang": "es-CO",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10241A",
+  "theme_color": "#10241A",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

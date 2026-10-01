@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Café de Colombia · Homenaje en el Día Internacional del Café</title>
+<meta name="description" content="Un homenaje al café de Colombia y a las familias que lo cultivan: fincas, variedades, regiones, menú, cafeterías famosas, videos y fotos reales. Arma tu taza y envía tu homenaje.">
+<meta name="theme-color" content="#10241A">
+
+<!-- Vista previa al compartir el link (WhatsApp, Facebook, X) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Vibras Positivas HM">
+<meta property="og:title" content="Café de Colombia · Un homenaje en su día">
+<meta property="og:description" content="Fincas, variedades, regiones, menú, cafeterías famosas y videos. Arma tu taza y envía tu homenaje al caficultor.">
+<meta property="og:url" content="https://haroldco45.github.io/cafe-de-colombia/">
+<meta property="og:image" content="https://haroldco45.github.io/cafe-de-colombia/og.jpg">
+<meta property="og:image:secure_url" content="https://haroldco45.github.io/cafe-de-colombia/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cerezas de café rojas sobre montañas cafeteras con el texto Café de Colombia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Café de Colombia · Un homenaje en su día">
+<meta name="twitter:description" content="Fincas, variedades, regiones, menú, cafeterías y videos del café colombiano.">
+<meta name="twitter:image" content="https://haroldco45.github.io/cafe-de-colombia/og.jpg">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --monte:#10241A; --monte2:#183428; --monte3:#21452F;
+  --cereza:#C41E3A; --cereza2:#9E1530;
+  --pergamino:#EBDDBF; --crema:#F3EEE3;
+  --niebla:#EEF1EC; --tinta:#16201A; --gris:#5B6660;
+  --tinto:#2B160E;
+  --sans:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --maxw:1180px;
+  --nav:64px;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--niebla);color:var(--tinta);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--cereza);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+/* ---------- Barra superior estilo concesionario ---------- */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(16,36,26,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--crema);border-bottom:1px solid rgba(235,221,191,.12)}
+.top-in{max-width:var(--maxw);margin:0 auto;height:var(--nav);display:flex;align-items:center;gap:20px;padding:0 20px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-stretch:85%;letter-spacing:-.01em;font-size:19px;white-space:nowrap}
+.marca svg{width:30px;height:30px;flex:none}
+.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{text-decoration:none;font-size:15px;font-weight:550;padding:8px 12px;border-radius:999px;white-space:nowrap;color:rgba(243,238,227,.78)}
+.tabs a:hover{color:#fff;background:rgba(255,255,255,.07)}
+.tabs a.on{color:#fff;background:var(--cereza)}
+.reloj{font-size:13px;color:var(--pergamino);white-space:nowrap;text-align:right;line-height:1.25}
+.reloj b{display:block;font-size:15px;color:#fff;font-variant-numeric:tabular-nums}
+@media (max-width:820px){.reloj{display:none}.marca span{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--crema);background:var(--monte);overflow:hidden}
+.hero .foto{position:absolute;inset:0}
+.hero .foto img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:acerca 14s ease-out forwards}
+@keyframes acerca{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,36,26,.25) 0%,rgba(16,36,26,.15) 35%,rgba(16,36,26,.92) 88%,var(--monte) 100%)}
+.hero-in{position:relative;z-index:2;max-width:var(--maxw);width:100%;margin:0 auto;padding:120px 20px 56px}
+.fecha{font-family:var(--serif);font-style:italic;font-size:clamp(19px,2.4vw,24px);color:var(--pergamino);margin:0 0 6px}
+.hero h1{font-weight:850;font-stretch:72%;font-size:clamp(64px,13vw,184px);line-height:.86;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.hero p.lead{font-family:var(--serif);font-size:clamp(19px,2.2vw,24px);line-height:1.45;max-width:36ch;margin:22px 0 28px;color:#F6F1E6}
+.acciones{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:14px 24px;font-weight:650;font-size:16px;text-decoration:none;transition:background .2s}
+.btn-r{background:var(--cereza);color:#fff}.btn-r:hover{background:var(--cereza2)}
+.btn-c{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}.btn-c:hover{background:rgba(255,255,255,.2)}
+.btn-o{background:var(--tinta);color:#fff}.btn-o:hover{background:#000}
+.contador{margin-top:28px;font-size:15px;color:var(--pergamino)}
+.credito-hero{position:absolute;right:14px;bottom:10px;z-index:3;font-size:11px;color:rgba(243,238,227,.6)}
+.credito-hero a{color:inherit}
+
+/* ---------- Ficha técnica del país ---------- */
+.ficha{background:var(--monte);color:var(--crema);padding:8px 0 64px}
+.ficha-in{max-width:var(--maxw);margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(235,221,191,.2)}
+.dato{padding:26px 20px 0 0}
+.dato+.dato{padding-left:20px;border-left:1px solid rgba(235,221,191,.2)}
+.dato strong{display:block;font-weight:800;font-stretch:75%;font-size:clamp(36px,4.6vw,56px);line-height:1;color:#fff}
+.dato span{display:block;margin-top:8px;font-size:15px;color:var(--pergamino);max-width:22ch}
+.fuente{max-width:var(--maxw);margin:20px auto 0;padding:0 20px;font-size:13px;color:rgba(235,221,191,.65)}
+@media (max-width:760px){.ficha-in{grid-template-columns:1fr 1fr}.dato:nth-child(3){border-left:0;padding-left:0}.dato{padding-bottom:22px}}
+
+/* ---------- Secciones ---------- */
+section.s{padding:88px 0}
+.s-in{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.s h2{font-weight:850;font-stretch:75%;font-size:clamp(40px,6vw,72px);line-height:.95;letter-spacing:-.015em;margin:0 0 14px;text-wrap:balance}
+.s .intro{font-family:var(--serif);font-size:20px;line-height:1.55;max-width:58ch;margin:0 0 40px;color:var(--gris)}
+.oscuro{background:var(--monte);color:var(--crema)}
+.oscuro .intro{color:var(--pergamino)}
+.blanco{background:#fff}
+
+/* imágenes con respaldo */
+.ph{position:relative;background:linear-gradient(135deg,var(--monte3),var(--monte));overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph.sin img{display:none}
+.ph.sin::before{content:"☕";position:absolute;inset:0;display:grid;place-items:center;font-size:48px;opacity:.35}
+
+/* ---------- Del grano a la taza (pasos) ---------- */
+.pasos{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.paso-b{flex:1 0 auto;min-width:112px;border:0;background:#fff;border-radius:12px;padding:12px 14px;text-align:left;color:var(--gris);border-top:4px solid #D5DBD5}
+.paso-b b{display:block;font-size:13px;font-weight:600;color:var(--gris)}
+.paso-b span{display:block;font-weight:700;color:var(--tinta);font-size:15px}
+.paso-b.on{border-top-color:var(--cereza);box-shadow:0 6px 20px rgba(16,36,26,.10)}
+.paso-b.hecho{border-top-color:#8FA898}
+.paso-v{display:grid;grid-template-columns:1.1fr 1fr;gap:0;margin-top:22px;background:#fff;border-radius:20px;overflow:hidden;min-height:380px}
+.paso-v .ph{min-height:300px}
+.paso-t{padding:36px 38px}
+.paso-t .n{font-weight:800;font-stretch:70%;font-size:64px;line-height:1;color:var(--cereza)}
+.paso-t h3{font-size:30px;font-weight:800;font-stretch:85%;margin:6px 0 12px;line-height:1.1}
+.paso-t p{font-family:var(--serif);font-size:19px;line-height:1.6;margin:0 0 14px}
+.paso-t .dato-c{font-size:15px;color:var(--gris);border-left:3px solid var(--cereza);padding-left:12px}
+.paso-nav{display:flex;gap:10px;margin-top:20px}
+.paso-nav button{border:1px solid #C9D1CA;background:#fff;border-radius:999px;padding:10px 18px;font-weight:600}
+.paso-nav button:disabled{opacity:.35;cursor:default}
+@media (max-width:760px){.paso-v{grid-template-columns:1fr}.paso-t{padding:26px 22px}}
+
+/* ---------- Variedades (línea de modelos) ---------- */
+.modelos{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.modelo-b{border:1px solid rgba(235,221,191,.3);background:transparent;color:var(--crema);border-radius:999px;padding:10px 18px;font-weight:600}
+.modelo-b.on{background:var(--crema);color:var(--monte);border-color:var(--crema)}
+.modelo-v{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.modelo-v .ph{aspect-ratio:4/3;border-radius:18px}
+.modelo-v h3{font-weight:850;font-stretch:72%;font-size:clamp(46px,6vw,80px);line-height:.92;margin:0 0 10px;color:#fff}
+.modelo-v .lema{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--pergamino);margin:0 0 22px}
+.specs{width:100%;border-collapse:collapse;font-size:16px}
+.specs th{text-align:left;font-weight:500;color:var(--pergamino);padding:11px 0;border-bottom:1px solid rgba(235,221,191,.18);width:44%;vertical-align:top}
+.specs td{padding:11px 0;border-bottom:1px solid rgba(235,221,191,.18);color:#fff;font-weight:600}
+.barra{height:8px;background:rgba(255,255,255,.12);border-radius:9px;overflow:hidden;margin-top:6px;max-width:220px}
+.barra i{display:block;height:100%;background:var(--cereza);border-radius:9px}
+@media (max-width:820px){.modelo-v{grid-template-columns:1fr;gap:24px}}
+
+/* ---------- Regiones ---------- */
+.regiones{display:grid;grid-template-columns:300px 1fr;gap:28px}
+.reg-lista{display:flex;flex-direction:column;gap:4px}
+.reg-b{border:0;background:transparent;text-align:left;padding:13px 16px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;font-weight:650;font-size:17px;color:var(--tinta)}
+.reg-b small{font-weight:500;color:var(--gris);font-size:13px}
+.reg-b:hover{background:#E1E7E1}
+.reg-b.on{background:var(--tinta);color:#fff}.reg-b.on small{color:#C9D1CA}
+.reg-v{background:#fff;border-radius:20px;overflow:hidden}
+.reg-v .ph{aspect-ratio:16/7}
+.reg-t{padding:28px 32px 32px}
+.reg-t h3{font-size:36px;font-weight:850;font-stretch:78%;margin:0 0 8px;line-height:1}
+.reg-t p{font-family:var(--serif);font-size:19px;line-height:1.6;margin:0 0 20px;max-width:60ch}
+.notas{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.nota{background:#F6E7EA;color:var(--cereza2);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:600}
+.minis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{border-top:2px solid var(--tinta);padding-top:8px}
+.mini b{display:block;font-size:13px;color:var(--gris);font-weight:500}
+.mini span{font-weight:700;font-size:16px}
+@media (max-width:820px){.regiones{grid-template-columns:1fr}.reg-lista{flex-direction:row;overflow-x:auto;padding-bottom:4px}.reg-b{flex:none;gap:10px}.reg-b small{display:none}.minis{grid-template-columns:1fr 1fr 1fr}.reg-t{padding:22px}}
+
+/* ---------- Arma tu taza (configurador) ---------- */
+.config{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:start}
+.grupo{margin-bottom:26px}
+.grupo h4{font-size:18px;margin:0 0 10px;font-weight:750}
+.grupo h4 em{font-style:normal;color:var(--gris);font-weight:500;font-size:15px;margin-left:6px}
+.opc{display:flex;flex-wrap:wrap;gap:8px}
+.opc button{border:1.5px solid #C9D1CA;background:#fff;border-radius:12px;padding:10px 16px;font-weight:600;color:var(--tinta);text-align:left}
+.opc button small{display:block;font-weight:500;color:var(--gris);font-size:13px}
+.opc button.on{border-color:var(--cereza);background:#FBF0F2;box-shadow:inset 0 0 0 1px var(--cereza)}
+.taza{position:sticky;top:calc(var(--nav) + 20px);background:var(--monte);color:var(--crema);border-radius:22px;padding:28px}
+.taza .svgc{display:grid;place-items:center;margin:-6px 0 6px}
+.taza h3{font-weight:850;font-stretch:78%;font-size:34px;line-height:1;margin:0 0 6px;color:#fff}
+.taza .sub{font-family:var(--serif);font-style:italic;color:var(--pergamino);margin:0 0 18px;font-size:18px}
+.taza .specs th{width:46%}
+.receta{margin-top:18px;background:rgba(255,255,255,.06);border-radius:14px;padding:16px 18px;font-size:15px;line-height:1.55}
+.receta b{color:#fff}
+@media (max-width:900px){.config{grid-template-columns:1fr}.taza{position:static}}
+
+/* ---------- Menú de café (tablero) ---------- */
+.tablero{background:var(--tinto);color:#F2E6D3;border-radius:24px;padding:44px clamp(22px,5vw,56px);display:grid;grid-template-columns:1fr 1fr;gap:10px 56px;box-shadow:inset 0 0 0 10px #3A2117}
+.tablero h3{grid-column:1/-1;font-family:var(--serif);font-style:italic;font-weight:500;font-size:30px;margin:0 0 14px;color:var(--pergamino);border-bottom:1px solid rgba(242,230,211,.25);padding-bottom:10px}
+.item{padding:12px 0}
+.item .fila{display:flex;align-items:baseline;gap:10px}
+.item .fila b{font-size:20px;font-weight:700;font-stretch:90%}
+.item .fila i{flex:1;border-bottom:2px dotted rgba(242,230,211,.35);transform:translateY(-4px)}
+.item .fila span{font-weight:600;color:var(--pergamino);font-size:15px;white-space:nowrap}
+.item p{margin:4px 0 0;font-family:var(--serif);font-size:17px;line-height:1.5;color:#D8C8B0}
+.acomp{grid-column:1/-1;margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+.acomp span{border:1px solid rgba(242,230,211,.3);border-radius:999px;padding:7px 14px;font-size:15px}
+@media (max-width:760px){.tablero{grid-template-columns:1fr}}
+
+/* ---------- Cafeterías ---------- */
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filtros button{border:1px solid #C9D1CA;background:#fff;border-radius:999px;padding:8px 16px;font-weight:600}
+.filtros button.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.cafes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cafe{background:#fff;border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.cafe .ph{aspect-ratio:16/10}
+.cafe .ph.letra{display:grid;place-items:center;background:var(--c,#21452F)}
+.cafe .ph.letra b{font-weight:850;font-stretch:70%;font-size:84px;color:rgba(255,255,255,.9);line-height:1}
+.cafe-t{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.cafe-t small{color:var(--cereza);font-weight:700;font-size:14px}
+.cafe-t h3{margin:2px 0 8px;font-size:23px;font-weight:800;font-stretch:88%;line-height:1.15}
+.cafe-t p{margin:0 0 16px;font-family:var(--serif);font-size:17px;line-height:1.55;color:#3D4741;flex:1}
+.cafe-t a{font-weight:650;font-size:15px;color:var(--tinta);text-decoration:none;border-bottom:2px solid var(--cereza);align-self:flex-start;padding-bottom:2px}
+@media (max-width:980px){.cafes{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.cafes{grid-template-columns:1fr}}
+
+/* ---------- Videos ---------- */
+.vid-main{border-radius:20px;overflow:hidden;background:#000;aspect-ratio:16/9;position:relative}
+.vid-main iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid-main button.play{position:absolute;inset:0;border:0;padding:0;background:#000}
+.vid-main button.play img{width:100%;height:100%;object-fit:cover;opacity:.8}
+.vid-main button.play span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:84px;height:84px;border-radius:50%;background:var(--cereza);display:grid;place-items:center}
+.vid-main button.play span::after{content:"";border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px}
+.vid-cap{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin:14px 0 26px;flex-wrap:wrap}
+.vid-cap h3{margin:0;font-size:22px;font-weight:750}
+.vid-cap a{font-size:15px;color:var(--pergamino)}
+.vid-lista{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vid-b{border:0;background:transparent;color:var(--crema);text-align:left;padding:0}
+.vid-b .ph{aspect-ratio:16/9;border-radius:12px;outline:3px solid transparent;outline-offset:2px}
+.vid-b.on .ph{outline-color:var(--cereza)}
+.vid-b span{display:block;margin-top:8px;font-weight:600;font-size:15px;line-height:1.35}
+@media (max-width:760px){.vid-lista{grid-template-columns:1fr 1fr}}
+
+/* ---------- Galería ---------- */
+.galeria{columns:3 300px;column-gap:14px}
+.gal-b{display:block;width:100%;border:0;padding:0;margin:0 0 14px;background:none;break-inside:avoid;border-radius:14px;overflow:hidden;position:relative}
+.gal-b img{width:100%;height:auto;transition:transform .5s}
+.gal-b:hover img{transform:scale(1.03)}
+.gal-b span{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font-weight:600;font-size:15px;text-align:left}
+.gal-b.sin{display:none}
+.caja{position:fixed;inset:0;z-index:100;background:rgba(8,16,12,.94);display:none;flex-direction:column;align-items:center;justify-content:center;padding:calc(20px + env(safe-area-inset-top,0px)) 16px calc(20px + env(safe-area-inset-bottom,0px))}
+.caja.abierta{display:flex}
+.caja img{max-height:78vh;width:auto;max-width:100%;border-radius:10px}
+.caja p{color:#fff;margin:14px 0 0;text-align:center;font-size:16px}
+.caja p a{color:var(--pergamino);font-size:14px}
+.caja .cerrar,.caja .flecha{position:absolute;border:0;background:rgba(255,255,255,.12);color:#fff;width:48px;height:48px;border-radius:50%;font-size:22px}
+.caja .cerrar{top:calc(16px + env(safe-area-inset-top,0px));right:16px}
+.caja .ant{left:12px;top:50%}.caja .sig{right:12px;top:50%}
+
+/* ---------- Homenaje ---------- */
+.homenaje{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.campo{display:block;margin-bottom:16px}
+.campo span{display:block;font-weight:650;margin-bottom:6px}
+.campo input,.campo textarea,.campo select{width:100%;border:1.5px solid #C9D1CA;border-radius:12px;padding:13px 14px;font:inherit;background:#fff;color:var(--tinta)}
+.campo textarea{min-height:110px;resize:vertical;font-family:var(--serif);font-size:18px}
+.campo input:focus,.campo textarea:focus,.campo select:focus{outline:none;border-color:var(--cereza)}
+#lienzo{width:100%;height:auto;border-radius:16px;box-shadow:0 18px 50px rgba(16,36,26,.25);background:var(--monte)}
+.homenaje .acciones{margin-top:16px}
+@media (max-width:860px){.homenaje{grid-template-columns:1fr}}
+
+/* ---------- Pie ---------- */
+footer{background:var(--tinta);color:#C9D1CA;padding:56px 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:15px}
+footer .s-in{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+footer h3{color:#fff;font-weight:800;font-stretch:85%;font-size:24px;margin:0 0 10px}
+footer p{margin:0 0 10px;line-height:1.6}
+footer a{color:var(--pergamino)}
+.creditos{font-size:13px;line-height:1.7;columns:2 200px}
+.creditos a{display:block}
+@media (max-width:760px){footer .s-in{grid-template-columns:1fr}}
+
+.aviso{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(120px);background:var(--tinta);color:#fff;padding:12px 20px;border-radius:999px;font-weight:600;z-index:120;transition:transform .3s}
+.aviso.ver{transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="marca" href="#inicio" aria-label="Café de Colombia, inicio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#C41E3A"/><ellipse cx="20" cy="20" rx="7.5" ry="11" fill="#2B160E" transform="rotate(25 20 20)"/><path d="M17 11 Q23 20 17 29" stroke="#C41E3A" stroke-width="2.4" fill="none" transform="rotate(25 20 20)"/></svg>
+      <span>Café de Colombia</span>
+    </a>
+    <nav class="tabs" aria-label="Secciones">
+      <a href="#proceso">Del grano a la taza</a>
+      <a href="#variedades">Variedades</a>
+      <a href="#regiones">Regiones</a>
+      <a href="#arma">Arma tu taza</a>
+      <a href="#menu">Menú</a>
+      <a href="#cafeterias">Cafeterías</a>
+      <a href="#videos">Videos</a>
+      <a href="#galeria">Fotos</a>
+      <a href="#homenaje">Homenaje</a>
+    </nav>
+    <div class="reloj" aria-live="off">Hora en Colombia<b id="hora">--:--</b></div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="foto ph"><img id="hero-img" alt="Valle de Cocora, Quindío, con palmas de cera entre montañas" fetchpriority="high"></div>
+  <div class="hero-in">
+    <p class="fecha" id="fecha-hoy">1 de octubre · Día Internacional del Café</p>
+    <h1>Café de<br>Colombia</h1>
+    <p class="lead">Detrás de cada tinto hay una familia que madrugó a recoger cereza por cereza en la montaña. Esta es su fiesta.</p>
+    <div class="acciones">
+      <a class="btn btn-r" href="#arma">Arma tu taza</a>
+      <a class="btn btn-c" href="#homenaje">Envía tu homenaje</a>
+    </div>
+    <p class="contador" id="contador"></p>
+  </div>
+  <p class="credito-hero">Foto: <a id="hero-cred" target="_blank" rel="noopener">Bernard Gagnon · Wikimedia Commons</a></p>
+</section>
+
+<!-- FICHA TÉCNICA DEL PAÍS -->
+<div class="ficha">
+  <div class="ficha-in">
+    <div class="dato"><strong>14,87 M</strong><span>sacos de 60 kg en la cosecha 2024-2025, la más alta en 33 años</span></div>
+    <div class="dato"><strong>550.000</strong><span>familias viven del café; el 95 % son pequeños productores</span></div>
+    <div class="dato"><strong>23</strong><span>departamentos y más de 600 municipios cultivan café</span></div>
+    <div class="dato"><strong>3.º</strong><span>productor del mundo, después de Brasil y Vietnam</span></div>
+  </div>
+  <p class="fuente">Cifras de la Federación Nacional de Cafeteros (FNC), reportadas por la prensa colombiana en 2025.</p>
+</div>
+
+<!-- PROCESO -->
+<section class="s" id="proceso">
+  <div class="s-in">
+    <h2>Del grano a la taza</h2>
+    <p class="intro">Once pasos separan una semilla de tu tinto de la mañana. Toca cada uno para recorrer el camino que hace el café colombiano.</p>
+    <div class="pasos" id="pasos" role="tablist" aria-label="Pasos del proceso"></div>
+    <div class="paso-v" id="paso-v"></div>
+    <div class="paso-nav"><button id="p-ant">Paso anterior</button><button id="p-sig">Siguiente paso</button></div>
+  </div>
+</section>
+
+<!-- VARIEDADES -->
+<section class="s oscuro" id="variedades">
+  <div class="s-in">
+    <h2>La línea de variedades</h2>
+    <p class="intro">Como los modelos de una marca, cada variedad tiene su ficha: de dónde salió, qué tan fuerte es contra la roya y qué deja en la taza.</p>
+    <div class="modelos" id="modelos" role="tablist" aria-label="Variedades de café"></div>
+    <div class="modelo-v" id="modelo-v"></div>
+  </div>
+</section>
+
+<!-- REGIONES -->
+<section class="s" id="regiones">
+  <div class="s-in">
+    <h2>Un país, muchas tazas</h2>
+    <p class="intro">La montaña, la altura y el clima cambian el sabor. Escoge una región y mira cómo sabe su café.</p>
+    <div class="regiones">
+      <div class="reg-lista" id="reg-lista" role="tablist" aria-label="Regiones cafeteras"></div>
+      <div class="reg-v" id="reg-v"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARMA TU TAZA -->
+<section class="s blanco" id="arma">
+  <div class="s-in">
+    <h2>Arma tu taza</h2>
+    <p class="intro">Escoge el origen, la tostión y el método. Te armamos la ficha de tu café con la receta para prepararlo en casa.</p>
+    <div class="config">
+      <div>
+        <div class="grupo"><h4>1. Origen</h4><div class="opc" id="o-origen"></div></div>
+        <div class="grupo"><h4>2. Tostión</h4><div class="opc" id="o-tostion"></div></div>
+        <div class="grupo"><h4>3. Método</h4><div class="opc" id="o-metodo"></div></div>
+        <div class="grupo"><h4>4. ¿Con qué? <em>opcional</em></h4><div class="opc" id="o-extra"></div></div>
+        <div class="grupo"><h4>5. Tazas</h4><div class="opc" id="o-tazas"></div></div>
+      </div>
+      <aside class="taza" aria-live="polite" id="taza"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- MENÚ -->
+<section class="s" id="menu">
+  <div class="s-in">
+    <h2>El menú de la casa</h2>
+    <p class="intro">Lo que se pide en una cafetería colombiana, de la tienda de pueblo a la barra de especialidad.</p>
+    <div class="tablero" id="tablero"></div>
+  </div>
+</section>
+
+<!-- CAFETERÍAS -->
+<section class="s" id="cafeterias" style="padding-top:0">
+  <div class="s-in">
+    <h2>Cafeterías y fincas para conocer</h2>
+    <p class="intro">Lugares famosos donde el café colombiano se toma en su mejor versión. Toca el botón para abrirlos en el mapa.</p>
+    <div class="filtros" id="filtros"></div>
+    <div class="cafes" id="cafes"></div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="s oscuro" id="videos">
+  <div class="s-in">
+    <h2>Míralo en video</h2>
+    <p class="intro">Documentales y piezas sobre el Paisaje Cultural Cafetero, patrimonio de la humanidad desde 2011.</p>
+    <div class="vid-main" id="vid-main"></div>
+    <div class="vid-cap"><h3 id="vid-titulo"></h3><a id="vid-link" target="_blank" rel="noopener">Abrir en YouTube</a></div>
+    <div class="vid-lista" id="vid-lista"></div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="s" id="galeria">
+  <div class="s-in">
+    <h2>Colombia cafetera en fotos</h2>
+    <p class="intro">Fotos reales del Eje Cafetero, el Cauca y las fincas del país. Toca una para verla en grande.</p>
+    <div class="galeria" id="galeria-g"></div>
+  </div>
+</section>
+
+<!-- HOMENAJE -->
+<section class="s blanco" id="homenaje">
+  <div class="s-in">
+    <h2>Gracias, caficultor</h2>
+    <p class="intro">Escribe tu mensaje para las familias cafeteras. Te armamos una tarjeta para descargar y compartir por WhatsApp.</p>
+    <div class="homenaje">
+      <div>
+        <label class="campo"><span>Tu nombre</span><input id="h-nombre" maxlength="40" placeholder="Ej.: Harold desde Caucasia"></label>
+        <label class="campo"><span>¿Dónde te tomas el tinto?</span><input id="h-lugar" maxlength="40" placeholder="Ej.: Caucasia, Antioquia"></label>
+        <label class="campo"><span>Tu mensaje</span><textarea id="h-msg" maxlength="180">Gracias por cada madrugada en la montaña. Cada mañana empieza con su trabajo.</textarea></label>
+        <label class="campo"><span>Estilo de la tarjeta</span>
+          <select id="h-estilo"><option value="monte">Verde montaña</option><option value="cereza">Rojo cereza</option><option value="tinto">Tinto oscuro</option></select>
+        </label>
+      </div>
+      <div>
+        <canvas id="lienzo" width="1080" height="1080" aria-label="Vista previa de tu tarjeta de homenaje"></canvas>
+        <div class="acciones">
+          <button class="btn btn-r" id="h-bajar">Descargar tarjeta</button>
+          <button class="btn btn-o" id="h-wa">Compartir por WhatsApp</button>
+          <button class="btn" id="h-compartir" style="background:#E1E7E1">Compartir imagen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="s-in">
+    <div>
+      <h3>Vibras Positivas HM</h3>
+      <p>Un homenaje al café de Colombia y a las familias que lo cultivan, hecho en Caucasia, Antioquia, para el Día Internacional del Café, que la Organización Internacional del Café celebra cada 1 de octubre desde 2015.</p>
+      <p>Cifras de producción: Federación Nacional de Cafeteros. Videos: canales públicos de YouTube de sus autores.</p>
+      <p>¿Quieres una app así para tu negocio? Escríbenos al <a href="https://wa.me/573117700431" target="_blank" rel="noopener">311 770 0431</a>.</p>
+    </div>
+    <div>
+      <h3>Créditos de fotos</h3>
+      <p style="font-size:13px">Fotos de Wikimedia Commons con licencias Creative Commons. Toca cada una para ver autor y licencia.</p>
+      <div class="creditos" id="creditos"></div>
+    </div>
+  </div>
+</footer>
+
+<div class="caja" id="caja" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="cerrar" id="c-cerrar" aria-label="Cerrar">✕</button>
+  <button class="flecha ant" id="c-ant" aria-label="Foto anterior">‹</button>
+  <img id="c-img" alt="">
+  <p id="c-txt"></p>
+  <button class="flecha sig" id="c-sig" aria-label="Foto siguiente">›</button>
+</div>
+<div class="aviso" id="aviso"></div>
+
+<script>
+/* ================= Fotos reales (Wikimedia Commons) ================= */
+const F = {
+  cocora1:  ['Valle de Cocora, Colombia 01.jpg', 'Valle de Cocora, Salento (Quindío)'],
+  cocora4:  ['Valle de Cocora, Colombia 04.jpg', 'Palmas de cera en el Valle de Cocora'],
+  niebla:   ['Foggy morning - PNN Valle de Cocora, Colombia.jpg', 'Mañana de niebla en Cocora'],
+  willys:   ['Jeeps Willys in Cocora Valley, Colombia.jpg', 'Los Willys, el carro de la zona cafetera'],
+  salento:  ['View of Salento, Colombia 01.jpg', 'Salento, Quindío'],
+  cafetales:['Cafetales, en Colombia.jpg', 'Cafetales del Paisaje Cultural Cafetero'],
+  quimbaya: ['Cafe Quimbaya 2005-08-27.jpg', 'Cafetal en Quimbaya, Quindío'],
+  museo:    ['Museo del Café.jpg', 'Museo del Café, Parque del Café (Montenegro)'],
+  parque:   ['Colombian national coffee park - panoramio.jpg', 'Parque Nacional del Café, Quindío'],
+  cerezas:  ['Coffee cherries of varying ripeness, on a tree in Colombia (by Brian Smith).jpg', 'Cerezas de café madurando en la mata'],
+  granos:   ['Colombian coffee beans.jpg', 'Granos de café colombiano'],
+  finca:    ['Coffee farm in Colombia.jpg', 'Finca cafetera colombiana'],
+  vivero:   ['New coffee varieties in a nursery at a coffee farm in Cauca, southwestern Colombia.jpg', 'Almácigo de nuevas variedades en el Cauca'],
+  tarde:    ['Cayendo la tarde en el Eje Cafetero.JPG', 'Atardecer en el Eje Cafetero']
+};
+const src  = (k, w=1280) => 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(F[k][0]) + '?width=' + w;
+const pag  = k => 'https://commons.wikimedia.org/wiki/File:' + encodeURIComponent(F[k][0].replace(/ /g,'_'));
+const $ = s => document.querySelector(s);
+const el = (tag, attrs={}, html='') => { const e=document.createElement(tag); for(const k in attrs) e.setAttribute(k, attrs[k]); if(html) e.innerHTML=html; return e; };
+function foto(k, w=1280, alt){
+  if(!k || !F[k]) return '<div class="ph sin"></div>';
+  return `<div class="ph"><img loading="lazy" src="${src(k,w)}" alt="${alt||F[k][1]}" onerror="this.parentNode.classList.add('sin')"></div>`;
+}
+function aviso(t){ const a=$('#aviso'); a.textContent=t; a.classList.add('ver'); clearTimeout(a._t); a._t=setTimeout(()=>a.classList.remove('ver'),2400); }
+
+/* Hero */
+const hi = $('#hero-img'); hi.src = src('cocora1', 1920); hi.onerror=()=>hi.parentNode.classList.add('sin');
+$('#hero-cred').href = pag('cocora1');
+
+/* ================= Hora real de Colombia (UTC-5) ================= */
+const TZ = 'America/Bogota';
+function ahoraCO(){
+  const p = new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).formatToParts(new Date());
+  const g = t => +p.find(x=>x.type===t).value;
+  return {y:g('year'), m:g('month'), d:g('day'), h:g('hour')%24, mi:g('minute')};
+}
+function tic(){
+  $('#hora').textContent = new Intl.DateTimeFormat('es-CO',{timeZone:TZ,hour:'numeric',minute:'2-digit',hour12:true}).format(new Date());
+  const c = ahoraCO();
+  const hoy = Date.UTC(c.y, c.m-1, c.d);
+  let prox = Date.UTC(c.y, 9, 1); if (hoy > prox) prox = Date.UTC(c.y+1, 9, 1);
+  const dias = Math.round((prox-hoy)/864e5);
+  const fh = new Intl.DateTimeFormat('es-CO',{timeZone:TZ,weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(new Date());
+  if (dias === 0){
+    $('#fecha-hoy').textContent = 'Hoy, ' + fh + ' · Día Internacional del Café';
+    $('#contador').textContent = '¡Hoy es el día! Levanta tu taza por el café de Colombia.';
+  } else {
+    $('#fecha-hoy').textContent = '1 de octubre · Día Internacional del Café';
+    $('#contador').textContent = 'Faltan ' + dias + (dias===1?' día':' días') + ' para el próximo Día Internacional del Café (hora de Colombia).';
+  }
+}
+tic(); setInterval(tic, 20000);
+
+/* ================= Del grano a la taza ================= */
+const PASOS = [
+  ['Almácigo','La semilla germina en germinador y pasa a bolsas en el almácigo. Allí la plántula crece unos meses antes de ir al campo.','Hoy se siembran variedades resistentes a la roya creadas por Cenicafé.','vivero'],
+  ['Siembra','Las matas se llevan a la ladera, muchas veces bajo sombra de guamo, plátano o nogal, que cuidan el suelo y el agua.','Una mata empieza a producir en serio hacia los dos años.','cafetales'],
+  ['Floración','La mata se llena de flores blancas con olor a jazmín. Duran pocos días, y de cada flor sale una cereza.','Las lluvias marcan cuándo florece: por eso Colombia cosecha casi todo el año.','finca'],
+  ['Cosecha','El recolector recorre la mata y escoge a mano solo las cerezas rojas y maduras. Es el paso que más define la calidad.','Colombia tiene cosecha principal y "traviesa" (mitaca) según la región.','cerezas'],
+  ['Despulpado','Ese mismo día se quita la pulpa roja. Queda el grano cubierto de mucílago, una baba dulce.','La pulpa sirve de abono para la misma finca.',null],
+  ['Fermentación','El grano reposa en tanques entre 12 y 18 horas para que el mucílago se suelte. Aquí también se forman sabores.','Los cafés de especialidad experimentan con fermentaciones largas y procesos honey o natural.',null],
+  ['Lavado','Se lava con agua limpia hasta que el grano rechina en la mano. Así nace el café "suave lavado" que hizo famoso al país.','Es el método tradicional de la caficultura colombiana.',null],
+  ['Secado','El café en pergamino se seca al sol en marquesinas, patios o casas elbas hasta quedar con 10 a 12 % de humedad.','Un buen secado protege el sabor y evita hongos.','quimbaya'],
+  ['Trilla','En la trilladora se le quita el pergamino. Queda el café verde, el que viaja en sacos de 60 kilos a todo el mundo.','Los sacos se marcan con el origen: así se protege el nombre Café de Colombia.','granos'],
+  ['Tostión','El calor transforma el grano verde: se dora, cruje y suelta los aromas. La tostión clara, media u oscura cambia la taza.','Tostar es cocinar: unos minutos de más o de menos cambian todo.',null],
+  ['Tu taza','Moler justo antes de preparar, agua bien caliente sin hervir y buena proporción. Lo demás es compartirlo.','Un buen tinto se toma sin afán.','tarde']
+];
+let pasoAct = 0;
+function pintaPasos(){
+  const c = $('#pasos'); c.innerHTML='';
+  PASOS.forEach((p,i)=>{
+    const b = el('button',{class:'paso-b'+(i===pasoAct?' on':'')+(i<pasoAct?' hecho':''),role:'tab','aria-selected':i===pasoAct},`<b>Paso ${i+1}</b><span>${p[0]}</span>`);
+    b.onclick=()=>{pasoAct=i;pintaPasos();};
+    c.appendChild(b);
+  });
+  const p = PASOS[pasoAct];
+  $('#paso-v').innerHTML = (p[3]?foto(p[3],1100):`<div class="ph" style="display:grid;place-items:center;color:#EBDDBF;font-family:var(--serif);font-style:italic;font-size:26px;padding:30px;text-align:center">${['','','','','La pulpa se va, el grano se queda','Doce a dieciocho horas de paciencia','Agua limpia, grano limpio','','','El aroma nace aquí',''][pasoAct]}</div>`)
+    + `<div class="paso-t"><div class="n">${String(pasoAct+1).padStart(2,'0')}</div><h3>${p[0]}</h3><p>${p[1]}</p><p class="dato-c">${p[2]}</p></div>`;
+  $('#p-ant').disabled = pasoAct===0; $('#p-sig').disabled = pasoAct===PASOS.length-1;
+  const on = $('#pasos .on'); if (on && pintaPasos._ya){ const t=on.parentNode; t.scrollTo({left:on.offsetLeft-t.offsetLeft-t.clientWidth/2+on.clientWidth/2,behavior:'smooth'}); }
+  pintaPasos._ya = true;
+}
+$('#p-ant').onclick=()=>{if(pasoAct>0){pasoAct--;pintaPasos();}};
+$('#p-sig').onclick=()=>{if(pasoAct<PASOS.length-1){pasoAct++;pintaPasos();}};
+pintaPasos();
+
+/* ================= Variedades ================= */
+const VAR = [
+  {n:'Castillo', lema:'La más sembrada del país', foto:'cafetales', specs:[['Origen','Cenicafé, Colombia (2005)'],['Tipo','Arábica, porte bajo'],['Resistencia a la roya',5],['Productividad',5],['En la taza','Balanceada, acidez media, cuerpo medio'],['Ideal para','El tinto de todos los días y cafés de origen']]},
+  {n:'Cenicafé 1', lema:'La nueva generación', foto:'vivero', specs:[['Origen','Cenicafé, Colombia (2016)'],['Tipo','Arábica, porte bajo'],['Resistencia a la roya',5],['Productividad',5],['En la taza','Limpia, dulce, acidez media'],['Ideal para','Fincas que renuevan cafetales']]},
+  {n:'Colombia', lema:'La que salvó los cafetales', foto:'finca', specs:[['Origen','Cenicafé, Colombia (1982)'],['Tipo','Arábica, porte bajo'],['Resistencia a la roya',4],['Productividad',4],['En la taza','Suave, cuerpo medio, buena dulzura'],['Ideal para','Zonas donde llegó la roya en los años 80']]},
+  {n:'Caturra', lema:'La clásica de los 70', foto:'cerezas', specs:[['Origen','Mutación del Bourbon, Brasil'],['Tipo','Arábica, porte bajo'],['Resistencia a la roya',1],['Productividad',4],['En la taza','Acidez brillante, notas cítricas'],['Ideal para','Cafés especiales en altura']]},
+  {n:'Típica', lema:'La abuela de todas', foto:'quimbaya', specs:[['Origen','Etiopía, vía Yemen y las Antillas'],['Tipo','Arábica, porte alto'],['Resistencia a la roya',1],['Productividad',2],['En la taza','Dulce, limpia, delicada'],['Ideal para','Quien busca el sabor de antes']]},
+  {n:'Tabi', lema:'Alta y resistente', foto:'niebla', specs:[['Origen','Cenicafé (Típica × Bourbon × Híbrido de Timor)'],['Tipo','Arábica, porte alto'],['Resistencia a la roya',5],['Productividad',3],['En la taza','Dulce, cuerpo alto, gran calidad'],['Ideal para','Cafés de especialidad']]},
+  {n:'Geisha', lema:'La de competencia', foto:'granos', specs:[['Origen','Etiopía, famosa en Panamá'],['Tipo','Arábica, porte alto'],['Resistencia a la roya',2],['Productividad',1],['En la taza','Floral, jazmín, bergamota, té'],['Ideal para','Microlotes y subastas']]},
+  {n:'Bourbon rosado', lema:'La joya del Huila', foto:'cocora4', specs:[['Origen','Bourbon, cultivado en el sur del Huila'],['Tipo','Arábica, porte alto'],['Resistencia a la roya',2],['Productividad',2],['En la taza','Frutos rojos, panela, acidez jugosa'],['Ideal para','Especialidad y concursos']]}
+];
+let varAct = 0;
+function barra(v){ return `${['','Baja','Media baja','Media','Alta','Muy alta'][v]}<div class="barra" aria-hidden="true"><i style="width:${v*20}%"></i></div>`; }
+function pintaVar(){
+  const c=$('#modelos'); c.innerHTML='';
+  VAR.forEach((v,i)=>{ const b=el('button',{class:'modelo-b'+(i===varAct?' on':''),role:'tab','aria-selected':i===varAct},v.n); b.onclick=()=>{varAct=i;pintaVar();}; c.appendChild(b); });
+  const v=VAR[varAct];
+  $('#modelo-v').innerHTML = foto(v.foto,1100) + `<div><h3>${v.n}</h3><p class="lema">${v.lema}</p><table class="specs">${v.specs.map(s=>`<tr><th>${s[0]}</th><td>${typeof s[1]==='number'?barra(s[1]):s[1]}</td></tr>`).join('')}</table></div>`;
+}
+pintaVar();
+
+/* ================= Regiones ================= */
+const REG = [
+  {n:'Huila', alt:'1.200–2.000 m', cos:'Abr–jun y oct–dic', foto:'cocora4', txt:'El departamento que más café produce en Colombia. Montañas del Macizo y del Magdalena, muchos premios de calidad y una tradición fuerte de cafés especiales.', notas:['Frutas rojas','Panela','Acidez jugosa','Cuerpo medio']},
+  {n:'Nariño', alt:'1.500–2.300 m', cos:'Abr–jul', foto:'niebla', txt:'Cafés sembrados muy alto, cerca de la línea del ecuador, entre volcanes. Las noches frías hacen que la cereza madure despacio.', notas:['Cítricos','Floral','Acidez alta','Dulce']},
+  {n:'Cauca', alt:'1.500–2.100 m', cos:'Abr–jun', foto:'vivero', txt:'Meseta de Popayán y montañas con suelos volcánicos. Comunidades campesinas e indígenas producen cafés limpios y aromáticos.', notas:['Floral','Caramelo','Acidez media alta']},
+  {n:'Eje Cafetero', alt:'1.300–1.800 m', cos:'Sep–dic y abr–may', foto:'cafetales', txt:'Caldas, Quindío y Risaralda: el Paisaje Cultural Cafetero, patrimonio de la humanidad desde 2011. Fincas en ladera, casas de bahareque y jeeps Willys.', notas:['Balanceado','Chocolate suave','Acidez media']},
+  {n:'Antioquia', alt:'1.300–2.000 m', cos:'Sep–dic', foto:'finca', txt:'Uno de los grandes productores del país, del Suroeste (Andes, Jardín, Ciudad Bolívar) al Oriente y el Norte. Café de arriería y de fondas.', notas:['Caramelo','Nuez','Cuerpo medio']},
+  {n:'Tolima', alt:'1.300–2.000 m', cos:'Abr–jun y oct–dic', foto:'salento', txt:'Laderas de la cordillera Central con cafés de especialidad que ganan terreno, sobre todo en el sur del departamento.', notas:['Frutal','Dulce','Acidez brillante']},
+  {n:'Santander', alt:'1.000–1.700 m', cos:'Sep–dic', foto:'quimbaya', txt:'Café cultivado casi todo bajo sombra, entre bosques. Taza de más cuerpo y menos acidez.', notas:['Chocolate','Cuerpo alto','Acidez baja']},
+  {n:'Sierra Nevada', alt:'900–1.600 m', cos:'Oct–dic', foto:'tarde', txt:'La montaña costera más alta del mundo. Café de comunidades arhuacas y campesinas, muchas veces orgánico.', notas:['Chocolate','Nuez','Cuerpo pleno','Acidez suave']}
+];
+let regAct = 0;
+function pintaReg(){
+  const c=$('#reg-lista'); c.innerHTML='';
+  REG.forEach((r,i)=>{ const b=el('button',{class:'reg-b'+(i===regAct?' on':''),role:'tab','aria-selected':i===regAct},`${r.n}<small>${r.alt}</small>`); b.onclick=()=>{regAct=i;pintaReg();}; c.appendChild(b); });
+  const r=REG[regAct];
+  $('#reg-v').innerHTML = foto(r.foto,1300) + `<div class="reg-t"><h3>${r.n}</h3><p>${r.txt}</p><div class="notas">${r.notas.map(n=>`<span class="nota">${n}</span>`).join('')}</div><div class="minis"><div class="mini"><b>Altura</b><span>${r.alt}</span></div><div class="mini"><b>Cosecha</b><span>${r.cos}</span></div><div class="mini"><b>Perfil</b><span>${r.notas[0]}</span></div></div></div>`;
+}
+pintaReg();
+
+/* ================= Arma tu taza ================= */
+const ORIG = {
+  'Huila':{acid:4,cuerpo:3,dulce:4,notas:'frutas rojas y panela'},
+  'Nariño':{acid:5,cuerpo:2,dulce:4,notas:'cítricos y flores'},
+  'Eje Cafetero':{acid:3,cuerpo:3,dulce:3,notas:'chocolate suave y caramelo'},
+  'Antioquia':{acid:3,cuerpo:3,dulce:3,notas:'caramelo y nuez'},
+  'Santander':{acid:2,cuerpo:4,dulce:3,notas:'chocolate y cacao'},
+  'Sierra Nevada':{acid:2,cuerpo:5,dulce:3,notas:'chocolate y nuez'}
+};
+const TOST = {
+  'Clara':{d:'Resalta la acidez y las frutas', acid:+1, cuerpo:-1, amargo:1},
+  'Media':{d:'El punto de equilibrio', acid:0, cuerpo:0, amargo:2},
+  'Oscura':{d:'Más cuerpo, más amargo', acid:-2, cuerpo:+1, amargo:4}
+};
+const MET = {
+  'Tinto de olleta':{g:8, ml:150, t:'Hierve el agua en la olleta, apaga, echa el café molido grueso, revuelve, tapa 4 minutos y cuela.', d:'Como en la finca'},
+  'Colador de tela':{g:10, ml:150, t:'Pon el café molido medio en la media de tela y vierte el agua caliente despacio, en círculos.', d:'El de la abuela'},
+  'Prensa francesa':{g:10, ml:160, t:'Molienda gruesa, agua a 93 °C, deja reposar 4 minutos y baja el émbolo despacio.', d:'Más cuerpo'},
+  'Filtro V60':{g:15, ml:240, t:'Molienda media fina. Moja el café con un poco de agua 30 s y luego vierte en espiral hasta completar, unos 3 minutos en total.', d:'Limpio y aromático'},
+  'Greca (moka)':{g:15, ml:100, t:'Agua hasta la válvula, café sin apretar, fuego medio y retira apenas empiece a borbotear.', d:'Fuerte, de estufa'},
+  'Espresso':{g:18, ml:36, t:'18 g de café molido fino, extracción de 25 a 30 segundos hasta unos 36 ml.', d:'Concentrado, con crema'}
+};
+const EXTRA = {
+  'Solo':{n:'', d:''},
+  'Perico':{n:'perico', d:'Agrega un chorrito de leche caliente.'},
+  'Con leche':{n:'con leche', d:'Mitad café, mitad leche espumosa.'},
+  'Con panela':{n:'campesino', d:'Endulza con panela rallada y una astilla de canela.'}
+};
+const TAZAS = [1,2,4,6];
+const sel = {origen:'Huila', tostion:'Media', metodo:'Filtro V60', extra:'Solo', tazas:1};
+function opciones(id, obj, clave, sub){
+  const c=$(id); c.innerHTML='';
+  Object.keys(obj).forEach(k=>{ const b=el('button',{class:sel[clave]===k?'on':'', 'aria-pressed':sel[clave]===k}, k + (sub&&sub(obj[k])?`<small>${sub(obj[k])}</small>`:'')); b.onclick=()=>{sel[clave]=k;pintaConfig();}; c.appendChild(b); });
+}
+function svgTaza(color, leche){
+  const liq = leche ? '#8A5A3C' : color;
+  return `<svg viewBox="0 0 220 150" width="220" height="150" aria-hidden="true">
+    <path d="M70 18 q-8 -10 0 -18 M100 18 q-8 -10 0 -18 M130 18 q-8 -10 0 -18" stroke="#EBDDBF" stroke-width="3" fill="none" opacity=".55"/>
+    <ellipse cx="110" cy="138" rx="96" ry="10" fill="rgba(0,0,0,.25)"/>
+    <path d="M40 40 h140 l-14 82 a14 14 0 0 1 -14 12 h-84 a14 14 0 0 1 -14 -12 z" fill="#F3EEE3"/>
+    <path d="M178 54 a22 22 0 1 1 -6 42" stroke="#F3EEE3" stroke-width="10" fill="none"/>
+    <ellipse cx="110" cy="42" rx="70" ry="9" fill="${liq}"/>
+    ${leche?'<ellipse cx="110" cy="42" rx="30" ry="4" fill="#D9B48F"/>':''}
+    <rect x="64" y="78" width="92" height="6" rx="3" fill="#C41E3A"/>
+  </svg>`;
+}
+function pintaConfig(){
+  opciones('#o-origen', ORIG, 'origen', o=>o.notas);
+  opciones('#o-tostion', TOST, 'tostion', o=>o.d);
+  opciones('#o-metodo', MET, 'metodo', o=>o.d);
+  opciones('#o-extra', EXTRA, 'extra', null);
+  const ct=$('#o-tazas'); ct.innerHTML='';
+  TAZAS.forEach(n=>{ const b=el('button',{class:sel.tazas===n?'on':'','aria-pressed':sel.tazas===n}, n+(n===1?' taza':' tazas')); b.onclick=()=>{sel.tazas=n;pintaConfig();}; ct.appendChild(b); });
+
+  const o=ORIG[sel.origen], t=TOST[sel.tostion], m=MET[sel.metodo], x=EXTRA[sel.extra];
+  const lim=v=>Math.max(1,Math.min(5,v));
+  const acid=lim(o.acid+t.acid), cuerpo=lim(o.cuerpo+t.cuerpo+(sel.metodo==='Prensa francesa'||sel.metodo==='Espresso'?1:0)+(sel.extra==='Con leche'?1:0));
+  const intens=lim(Math.round((cuerpo+t.amargo)/2)+(sel.metodo==='Espresso'||sel.metodo==='Greca (moka)'?1:0));
+  const g=m.g*sel.tazas, ml=m.ml*sel.tazas;
+  const cucharadas = Math.round(g/5*2)/2;
+  const nombre = (sel.extra!=='Solo'? (sel.extra==='Con panela'?'Tinto campesino':sel.metodo==='Espresso'?'Espresso '+x.n:'Café '+x.n) : sel.metodo==='Espresso'?'Espresso':'Tinto') + ' del ' + sel.origen;
+  const color = {'Clara':'#6B3A1E','Media':'#4A2614','Oscura':'#2B160E'}[sel.tostion];
+  $('#taza').innerHTML = `<div class="svgc">${svgTaza(color, sel.extra==='Con leche'||sel.extra==='Perico')}</div>
+    <h3>${nombre}</h3><p class="sub">Notas a ${o.notas}</p>
+    <table class="specs">
+      <tr><th>Acidez</th><td>${barra(acid)}</td></tr>
+      <tr><th>Cuerpo</th><td>${barra(cuerpo)}</td></tr>
+      <tr><th>Intensidad</th><td>${barra(intens)}</td></tr>
+      <tr><th>Tostión</th><td>${sel.tostion}</td></tr>
+    </table>
+    <div class="receta"><b>Receta para ${sel.tazas} ${sel.tazas===1?'taza':'tazas'}:</b> ${g} g de café (unas ${String(cucharadas).replace('.',',')} cucharadas) y ${ml} ml de agua. ${m.t} ${x.d}</div>`;
+}
+pintaConfig();
+
+/* ================= Menú ================= */
+const MENU = [
+  ['Tinto','El de toda la vida','Café negro, suave, en pocillo. Se ofrece en la casa, la oficina y la esquina.'],
+  ['Perico','Antioquia','Tinto con un chorrito de leche. En Bogotá le dicen pintadito.'],
+  ['Café con leche','Desayuno','Mitad café, mitad leche caliente, con pan o arepa.'],
+  ['Tinto campesino','De olleta','Hecho en olleta con panela y canela, como en la finca.'],
+  ['Carajillo','Para el frío','Tinto con un toque de aguardiente o ron. Solo para adultos.'],
+  ['Americano','Barra','Espresso alargado con agua caliente.'],
+  ['Espresso','Barra','Corto, intenso y con crema. La base de la carta.'],
+  ['Capuchino','Barra','Espresso con leche espumada y un poco de canela o cacao.'],
+  ['Granizado de café','Tierra caliente','Café frío con hielo frappé, leche y arequipe. Para el calor del Bajo Cauca.'],
+  ['Filtrado de origen','Especialidad','V60 o Chemex con un café de una sola finca. Se toma sin azúcar para sentir sus notas.']
+];
+$('#tablero').innerHTML = '<h3>Pídalo como quiera</h3>' + MENU.map(m=>`<div class="item"><div class="fila"><b>${m[0]}</b><i></i><span>${m[1]}</span></div><p>${m[2]}</p></div>`).join('')
+ + '<div class="acomp"><span>Con pandebono</span><span>Con buñuelo</span><span>Con almojábana</span><span>Con arepa de queso</span><span>Con achiras</span></div>';
+
+/* ================= Cafeterías y fincas ================= */
+const CAFES = [
+  {n:'Café San Alberto', l:'Buenavista, Quindío', tipo:'Finca', foto:'cafetales', c:'#5A2A1A', t:'Hacienda cafetera con mirador sobre el valle del Quindío. Hacen recorrido por los cafetales y cata guiada de su café.'},
+  {n:'Parque del Café', l:'Montenegro, Quindío', tipo:'Parque', foto:'museo', c:'#21452F', t:'Parque temático con el Museo del Café, sendero entre cafetales y show del café. Plan clásico del Eje Cafetero.'},
+  {n:'Recuca', l:'Calarcá, Quindío', tipo:'Finca', img:'fotos/recuca.jpg', c:'#7A4A1E', t:'Recorrido de la Cultura Cafetera: te pones el canasto, recoges café y conoces cómo se vive en una finca.'},
+  {n:'Hacienda Venecia', l:'Manizales, Caldas', tipo:'Finca', img:'fotos/hacienda-venecia.jpg', c:'#3A5A40', t:'Finca cafetera tradicional con casa de hacienda, tour del café y hospedaje entre cafetales.'},
+  {n:'Café Jesús Martín', l:'Salento, Quindío', tipo:'Cafetería', foto:'salento', c:'#2B160E', t:'Tostador y cafetería en el pueblo de Salento, a un paso del Valle de Cocora. Buen lugar para probar métodos.'},
+  {n:'Pergamino Café', l:'Medellín, El Poblado', tipo:'Cafetería', img:'fotos/pergamino.jpg', pos:'center 35%', c:'#9E1530', t:'Referente del café de especialidad en Medellín, con cafés de fincas antioqueñas y barra de métodos.'},
+  {n:'Amor Perfecto', l:'Bogotá, Chapinero', tipo:'Cafetería', img:'fotos/amor-perfecto.jpg', pos:'center 40%', c:'#4A2614', t:'Tostadores pioneros del café de especialidad en Bogotá. Barra de métodos, catas y cursos.'},
+  {n:'Juan Valdez Café', l:'Todo el país', tipo:'Cafetería', img:'fotos/juan-valdez.jpg', pos:'center 30%', c:'#C41E3A', t:'La cadena de los caficultores colombianos, nacida en 2002. Sus tiendas llevan el café de origen a aeropuertos y ciudades.'},
+  {n:'Café Velvet', l:'Medellín, Provenza', tipo:'Cafetería', img:'fotos/velvet.jpg', pos:'center 30%', c:'#183428', t:'Cafetería de especialidad en Provenza con buena repostería y cafés colombianos de origen.'}
+];
+let filtro='Todas';
+function pintaCafes(){
+  const tipos=['Todas','Cafetería','Finca','Parque'];
+  const f=$('#filtros'); f.innerHTML='';
+  tipos.forEach(t=>{ const b=el('button',{class:filtro===t?'on':'','aria-pressed':filtro===t}, t==='Cafetería'?'Cafeterías':t==='Finca'?'Fincas':t==='Parque'?'Parques':t); b.onclick=()=>{filtro=t;pintaCafes();}; f.appendChild(b); });
+  $('#cafes').innerHTML = CAFES.filter(c=>filtro==='Todas'||c.tipo===filtro).map(c=>{
+    const img = c.img ? `<div class="ph"><img loading="lazy" src="${c.img}" alt="${c.n}, ${c.l}" style="object-position:${c.pos||'center'}" onerror="this.parentNode.classList.add('sin')"></div>` : c.foto ? foto(c.foto, 800, c.l) : `<div class="ph letra" style="--c:${c.c}"><b>${c.n.split(' ').map(w=>w[0]).slice(0,2).join('')}</b></div>`;
+    const q = encodeURIComponent(c.n + ' ' + c.l + ' Colombia');
+    return `<article class="cafe">${img}<div class="cafe-t"><small>${c.l}</small><h3>${c.n}</h3><p>${c.t}</p><a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">Ver en el mapa</a></div></article>`;
+  }).join('');
+}
+pintaCafes();
+
+/* ================= Videos (YouTube) ================= */
+const VID = [
+  ['4tYr_3qZiHk','El Oro Negro de Colombia: documental del café colombiano'],
+  ['lM1PhgtdJDk','Paisaje Cultural Cafetero Colombiano'],
+  ['mD0GaXzJGII','Celebramos el Paisaje Cultural Cafetero'],
+  ['TzyrzLzIc-s','La finca cafetera: historia del café en la región'],
+  ['OTt4qa-cK6c','Arquitectura del Paisaje Cultural Cafetero'],
+  ['281e7K1BNZc','10 años del Paisaje Cultural Cafetero como patrimonio mundial']
+];
+let vidAct=0;
+const miniV = id => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+function pintaVid(cargar){
+  const [id,tit]=VID[vidAct];
+  $('#vid-titulo').textContent=tit;
+  $('#vid-link').href='https://www.youtube.com/watch?v='+id;
+  const m=$('#vid-main');
+  if(cargar){
+    m.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${tit}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+  } else {
+    m.innerHTML=`<button class="play" aria-label="Reproducir: ${tit}"><img src="https://i.ytimg.com/vi/${id}/maxresdefault.jpg" onerror="this.src='${miniV(id)}'" alt=""><span></span></button>`;
+    m.querySelector('button').onclick=()=>pintaVid(true);
+  }
+  const l=$('#vid-lista'); l.innerHTML='';
+  VID.forEach((v,i)=>{ const b=el('button',{class:'vid-b'+(i===vidAct?' on':'')},`<div class="ph"><img loading="lazy" src="${miniV(v[0])}" alt=""></div><span>${v[1]}</span>`); b.onclick=()=>{vidAct=i;pintaVid(true);$('#vid-main').scrollIntoView({behavior:'smooth',block:'center'});}; l.appendChild(b); });
+}
+pintaVid(false);
+
+/* ================= Galería con visor ================= */
+const GAL = ['cocora1','cerezas','cafetales','willys','finca','salento','granos','niebla','quimbaya','museo','vivero','parque','tarde','cocora4'];
+let galVis=[], galAct=0;
+$('#galeria-g').innerHTML = GAL.map((k,i)=>`<button class="gal-b" data-i="${i}"><img loading="lazy" src="${src(k,900)}" alt="${F[k][1]}" onerror="this.parentNode.classList.add('sin')"><span>${F[k][1]}</span></button>`).join('');
+document.querySelectorAll('.gal-b').forEach(b=>b.onclick=()=>abrir(+b.dataset.i));
+function abrir(i){ galAct=i; const k=GAL[i]; $('#c-img').src=src(k,1800); $('#c-img').alt=F[k][1]; $('#c-txt').innerHTML=`${F[k][1]}<br><a href="${pag(k)}" target="_blank" rel="noopener">Autor y licencia en Wikimedia Commons</a>`; $('#caja').classList.add('abierta'); $('#c-cerrar').focus(); }
+const cerrar=()=>$('#caja').classList.remove('abierta');
+$('#c-cerrar').onclick=cerrar;
+$('#c-ant').onclick=()=>abrir((galAct-1+GAL.length)%GAL.length);
+$('#c-sig').onclick=()=>abrir((galAct+1)%GAL.length);
+$('#caja').addEventListener('click',e=>{if(e.target.id==='caja')cerrar();});
+document.addEventListener('keydown',e=>{ if(!$('#caja').classList.contains('abierta'))return; if(e.key==='Escape')cerrar(); if(e.key==='ArrowLeft')$('#c-ant').click(); if(e.key==='ArrowRight')$('#c-sig').click(); });
+$('#creditos').innerHTML = Object.keys(F).map(k=>`<a href="${pag(k)}" target="_blank" rel="noopener">${F[k][1]}</a>`).join('');
+
+/* ================= Tarjeta de homenaje ================= */
+const ESTILOS = {monte:['#10241A','#21452F','#EBDDBF'], cereza:['#9E1530','#C41E3A','#FFE3E8'], tinto:['#2B160E','#4A2614','#EBDDBF']};
+function lineas(ctx, txt, max){
+  const pal=txt.split(/\s+/); const out=[]; let l='';
+  pal.forEach(p=>{ const t=l?l+' '+p:p; if(ctx.measureText(t).width>max && l){out.push(l); l=p;} else l=t; });
+  if(l) out.push(l); return out;
+}
+function dibuja(){
+  const cv=$('#lienzo'), ctx=cv.getContext('2d'), W=1080, H=1080;
+  const [a,b,c]=ESTILOS[$('#h-estilo').value];
+  const g=ctx.createLinearGradient(0,0,0,H); g.addColorStop(0,a); g.addColorStop(1,b);
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  // montañas cafeteras
+  ctx.fillStyle='rgba(0,0,0,.18)';
+  ctx.beginPath(); ctx.moveTo(0,H); for(let x=0;x<=W;x+=20) ctx.lineTo(x, 820+40*Math.sin(x/160)+16*Math.sin(x/55)); ctx.lineTo(W,H); ctx.fill();
+  ctx.fillStyle='rgba(0,0,0,.14)';
+  for(let r=0;r<6;r++) for(let x=-10;x<W;x+=40){ const y=880+r*30+10*Math.sin(x/120+r); ctx.beginPath(); ctx.ellipse(x,y,14,6,0,0,Math.PI*2); ctx.fill(); }
+  // cerezas
+  [[880,170,54],[960,120,42],[960,230,48],[830,250,38]].forEach(([x,y,r])=>{ ctx.fillStyle='#C41E3A'; if($('#h-estilo').value==='cereza') ctx.fillStyle='#F3EEE3'; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill(); ctx.fillStyle='rgba(255,255,255,.35)'; ctx.beginPath(); ctx.arc(x-r*.35,y-r*.35,r*.2,0,Math.PI*2); ctx.fill(); });
+  ctx.fillStyle=c;
+  ctx.font='600 34px Archivo, Arial'; ctx.fillText('1 de octubre · Día Internacional del Café', 90, 130);
+  ctx.fillStyle='#FFFFFF'; ctx.font='800 120px Archivo, Arial';
+  ctx.fillText('Gracias,', 86, 290); ctx.fillText('caficultor', 86, 400);
+  ctx.fillStyle=c; ctx.font='italic 48px Newsreader, Georgia, serif';
+  const msg = $('#h-msg').value.trim() || 'Gracias por cada madrugada en la montaña.';
+  const ls = lineas(ctx, '“' + msg + '”', 880).slice(0,5);
+  ls.forEach((l,i)=>ctx.fillText(l, 90, 500 + i*66));
+  const nom = $('#h-nombre').value.trim(), lug=$('#h-lugar').value.trim();
+  ctx.fillStyle='#FFFFFF'; ctx.font='700 40px Archivo, Arial';
+  if(nom) ctx.fillText('— ' + nom, 90, 520 + ls.length*66 + 20);
+  if(lug){ ctx.fillStyle=c; ctx.font='500 32px Archivo, Arial'; ctx.fillText(lug, 90, 520 + ls.length*66 + 70); }
+  ctx.fillStyle='rgba(255,255,255,.85)'; ctx.font='600 28px Archivo, Arial';
+  ctx.fillText('Café de Colombia · Vibras Positivas HM', 90, 1020);
+}
+['h-nombre','h-lugar','h-msg','h-estilo'].forEach(id=>$('#'+id).addEventListener('input',dibuja));
+if(document.fonts) document.fonts.ready.then(dibuja); dibuja();
+$('#h-bajar').onclick=()=>{ const a=document.createElement('a'); a.download='homenaje-cafe-de-colombia.png'; a.href=$('#lienzo').toDataURL('image/png'); a.click(); aviso('Tarjeta descargada'); };
+const URL_APP = location.origin + location.pathname;
+$('#h-wa').onclick=()=>{
+  const nom=$('#h-nombre').value.trim();
+  const t = '☕ Hoy es el Día Internacional del Café. ' + ($('#h-msg').value.trim()) + (nom?' — '+nom:'') + '\n\nMira este homenaje al café de Colombia: ' + URL_APP;
+  window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank');
+};
+$('#h-compartir').onclick=async()=>{
+  try{
+    const blob = await new Promise(r=>$('#lienzo').toBlob(r,'image/png'));
+    const file = new File([blob],'homenaje-cafe-de-colombia.png',{type:'image/png'});
+    if(navigator.canShare && navigator.canShare({files:[file]})){ await navigator.share({files:[file], text:'Gracias, caficultor ☕ '+URL_APP}); }
+    else { aviso('Tu navegador no comparte imágenes: usa Descargar'); }
+  }catch(e){ if(e.name!=='AbortError') aviso('No se pudo compartir: usa Descargar'); }
+};
+
+/* ================= Pestaña activa al hacer scroll ================= */
+const links=[...document.querySelectorAll('.tabs a')];
+const obs=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ links.forEach(a=>a.classList.toggle('on', a.getAttribute('href')==='#'+e.target.id)); const on=document.querySelector('.tabs a.on'); if(on){ const t=on.parentNode; t.scrollTo({left:on.offsetLeft-t.clientWidth/2+on.clientWidth/2,behavior:'smooth'}); } } }); },{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>obs.observe(s));
+
+/* ================= PWA ================= */
+if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }
+</script>
+</body>
+</html>
